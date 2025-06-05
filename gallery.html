@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahesh Raj Dahal - Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="bg-gray-100">
+    <header
+      id="header"
+      class="flex z-50 justify-between items-center px-6 lg:px-[100px] py-3 fixed w-full top-0 bg-[#002244] text-white transition-colors duration-300"
+    >
+      <h1 class="text-2xl md:text-3xl tracking-tight leading-tight">
+        <span
+          class="bg-clip-text cursor-pointer"
+          onclick="window.location.href='index.html'"
+        >
+          Mahesh Raj Dahal
+        </span>
+      </h1>
+      <nav class="flex gap-10 text-lg max-lg:gap-6 max-lg:hidden">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="news.html">News</a>
+        <a href="videos.html">Videos</a>
+        <a href="gallery.html" class="text-yellow-200" id="active">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger lg:hidden text-2xl" id="hamburger">
+        &#9776;
+      </button>
+
+      <nav class="mobile-menu bg-[#F7D774]" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="news.html">News</a>
+        <a href="videos.html">Videos</a>
+        <a href="gallery.html" class="text-yellow-200" id="active2">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="gallery mx-auto pb-6 mt-[60px] max-md:mt-[56px] w-full">
+      <div
+        class="relative bg-[#002244] py-8 shadow-xl overflow-hidden mb-6 w-full"
+      >
+        <div class="absolute inset-0 opacity-10">
+          <div
+            class="absolute top-0 left-0 w-32 h-32 bg-white rounded-full -translate-x-16 -translate-y-16"
+          ></div>
+          <div
+            class="absolute bottom-0 right-0 w-24 h-24 bg-white rounded-full translate-x-12 translate-y-12"
+          ></div>
+          <div
+            class="absolute top-1/2 right-1/4 w-16 h-16 bg-white transform rotate-45"
+          ></div>
+        </div>
+
+        <div class="relative flex justify-center">
+          <h2
+            class="text-4xl leading-[48px] text-white tracking-wider animate-fadeInUp"
+          >
+            Photo Gallery
+          </h2>
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 lg:px-24 animate-fadeIn"
+      >
+        <a
+          href="./assets/gallery1.jpg"
+          data-fancybox="gallery"
+          class="block transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl animate-scaleIn"
+        >
+          <img
+            src="./assets/gallery1.jpg"
+            alt="Gallery Image 1"
+            class="w-full h-48 object-cover rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
+          />
+        </a>
+        <a
+          href="./assets/gallery2.jpg"
+          data-fancybox="gallery"
+          class="block transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl animate-scaleIn"
+        >
+          <img
+            src="./assets/gallery2.jpg"
+            alt="Gallery Image 2"
+            class="w-full h-48 object-cover rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
+          />
+        </a>
+        <a
+          href="./assets/gallery3.jpg"
+          data-fancybox="gallery"
+          class="block transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl animate-scaleIn"
+        >
+          <img
+            src="./assets/gallery3.jpg"
+            alt="Gallery Image 3"
+            class="w-full h-48 object-cover rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
+          />
+        </a>
+        <a
+          href="./assets/gallery4.jpg"
+          data-fancybox="gallery"
+          class="block transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl animate-scaleIn"
+        >
+          <img
+            src="./assets/gallery4.jpg"
+            alt="Gallery Image 4"
+            class="w-full h-48 object-cover rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
+          />
+        </a>
+        <a
+          href="./assets/gallery5.jpg"
+          data-fancybox="gallery"
+          class="block transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl animate-scaleIn"
+        >
+          <img
+            src="./assets/gallery5.jpg"
+            alt="Gallery Image 5"
+            class="w-full h-48 object-cover rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
+          />
+        </a>
+        <a
+          href="./assets/gallery6.jpg"
+          data-fancybox="gallery"
+          class="block transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl animate-scaleIn"
+        >
+          <img
+            src="./assets/gallery6.jpg"
+            alt="Gallery Image 6"
+            class="w-full h-48 object-cover rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
+          />
+        </a>
+        <a
+          href="./assets/gallery7.jpg"
+          data-fancybox="gallery"
+          class="block transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl animate-scaleIn"
+        >
+          <img
+            src="./assets/gallery7.jpg"
+            alt="Gallery Image 7"
+            class="w-full h-48 object-cover rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
+          />
+        </a>
+        <a
+          href="./assets/gallery8.jpg"
+          data-fancybox="gallery"
+          class="block transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl animate-scaleIn"
+        >
+          <img
+            src="./assets/gallery8.jpg"
+            alt="Gallery Image 8"
+            class="w-full h-48 object-cover rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
+          />
+        </a>
+        <a
+          href="./assets/gallery9.jpg"
+          data-fancybox="gallery"
+          class="block transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl animate-scaleIn"
+        >
+          <img
+            src="./assets/gallery9.jpg"
+            alt="Gallery Image 9"
+            class="w-full h-48 object-cover rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
+          />
+        </a>
+        <a
+          href="./assets/gallery10.jpg"
+          data-fancybox="gallery"
+          class="block transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl animate-scaleIn"
+        >
+          <img
+            src="./assets/gallery10.jpg"
+            alt="Gallery Image 10"
+            class="w-full h-48 object-cover rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
+          />
+        </a>
+        <a
+          href="./assets/gallery11.jpg"
+          data-fancybox="gallery"
+          class="block transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl animate-scaleIn"
+        >
+          <img
+            src="./assets/gallery11.jpg"
+            alt="Gallery Image 11"
+            class="w-full h-48 object-cover rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
+          />
+        </a>
+        <a
+          href="./assets/gallery12.jpg"
+          data-fancybox="gallery"
+          class="block transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl animate-scaleIn"
+        >
+          <img
+            src="./assets/gallery12.jpg"
+            alt="Gallery Image 12"
+            class="w-full h-48 object-cover rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
+          />
+        </a>
+      </div>
+    </section>
+
+    <!-- foooter -->
+
+    <footer class="bg-[#16243C] text-white py-10">
+      <div class="container px-6 lg:px-20 mx-auto">
+        <div
+          class="flex flex-col lg:flex-row items-center justify-between gap-8 mb-8"
+        >
+          <!-- Brand Section -->
+          <div class="text-2xl font-bold text-center lg:text-left flex flex-1">
+            <h2 class="text-[32px] max-md:justify-center">Mahesh Raj Dahal</h2>
+          </div>
+
+          <!-- Enhanced Nav Section -->
+          <nav
+            class="flex justify-center gap-4 text-md max-lg:gap-12 max-lg:hidden"
+          >
+            <a href="#" class="hover:text-[#FFD700] transition-all duration-300"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="hover:text-[#FFD700] transition-all duration-300"
+              >About</a
+            >
+            <a
+              href="news.html"
+              class="hover:text-[#FFD700] transition-all duration-300"
+              >News</a
+            >
+            <a
+              href="videos.html"
+              class="hover:text-[#FFD700] transition-all duration-300"
+              >Videos</a
+            >
+            <a
+              href="gallery.html"
+              class="hover:text-[#FFD700] transition-all duration-300"
+              >Gallery</a
+            >
+            <a
+              href="contact.html"
+              class="hover:text-[#FFD700] transition-all duration-300"
+              >Contact</a
+            >
+          </nav>
+
+          <!-- Social Icons Section -->
+          <div class="flex space-x-4 justify-center lg:justify-end">
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md bg-opacity-80"
+            >
+              <img
+                src="./assets/facebook.svg"
+                alt="Facebook"
+                class="w-6 h-6 invert"
+              />
+            </a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md bg-opacity-80"
+            >
+              <img
+                src="./assets/insta.svg"
+                alt="Instagram"
+                class="w-6 h-6 invert"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mahesh-raj-dahal-059987316/"
+              target="_blank"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md bg-opacity-80"
+            >
+              <img
+                src="./assets/linkedin.svg"
+                alt="LinkedIn"
+                class="w-6 h-6 invert"
+              />
+            </a>
+            <a
+              href="https://twitter.com/mahesh_raj_dahal"
+              target="_blank"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md bg-opacity-80"
+            >
+              <img
+                src="./assets/twitter.png"
+                alt="Twitter"
+                class="w-6 h-6 invert"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- Separator Line -->
+        <hr class="border-white/20 my-4 mt-20" />
+
+        <!-- Footer Bottom Section -->
+        <div
+          class="flex justify-between items-center text-sm gap-2 max-md:flex-col max-md:gap-4 mt-5"
+        >
+          <!-- Copyright on the left -->
+          <div
+            class="text-center font-thin tracking-wider text-xs max-md:text-left"
+          >
+            &copy; 2025 Copyright. All rights reserved
+          </div>
+
+          <!-- Developed by on the right -->
+          <div class="flex items-center gap-2 max-md:justify-center">
+            <span class="text-xs">Developed by:</span>
+            <img src="./assets/kantipurwhite.svg" class="w-16 inline-block" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize fancybox
+        Fancybox.bind("[data-fancybox='gallery']", {
+          Carousel: {
+            transition: "fade",
+          },
+          Toolbar: {
+            display: ["close", "prev", "next"],
+          },
+          dragToClose: true,
+          animated: true,
+        });
+      });
+    </script>
+  </body>
+</html>

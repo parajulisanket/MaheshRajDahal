@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header
+      id="header"
+      class="flex z-50 justify-between items-center px-[24px] lg:px-[100px] py-3 fixed w-full z-10 top-0 bg-[#002244] text-white transition-colors duration-300"
+    >
+      <h1 class="text-2xl md:text-3xl tracking-tight leading-tight">
+        <span
+          class="bg-clip-text cursor-pointer"
+          onclick="window.location.href='index.html'"
+        >
+          Mahesh Raj Dahal
+        </span>
+      </h1>
+      <nav class="flex gap-10 text-[18px] max-lg:gap-6 max-lg:hidden">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="text-yellow-200" id="active">About</a>
+        <a href="news.html">News</a>
+        <a href="videos.html">Videos</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger lg:hidden text-[22px]" id="hamburger">
+        &#9776;
+      </button>
+
+      <!-- Mobile Menu -->
+      <nav class="mobile-menu bg-[#F7D774]" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="text-yellow-200" id="active2">About</a>
+        <a href="news.html">News</a>
+        <a href="videos.html">Videos</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <div
+      class="max-lg:mt-[57px] mt-[60px] relative bg-[#002244] py-8 px-8 shadow-xl overflow-hidden mb-6 max-w-screen"
+    >
+      <!-- Background pattern -->
+      <div class="absolute inset-0 opacity-10">
+        <div
+          class="absolute top-0 left-0 w-32 h-32 bg-white rounded-full -translate-x-16 -translate-y-16"
+        ></div>
+        <div
+          class="absolute bottom-0 right-0 w-24 h-24 bg-white rounded-full translate-x-12 translate-y-12"
+        ></div>
+        <div
+          class="absolute top-1/2 right-1/4 w-16 h-16 bg-white transform rotate-45"
+        ></div>
+      </div>
+
+      <div class="relative flex justify-center">
+        <h1
+          class="title text-[40px] leading-[48px] text-white tracking-wider animate-fadeInUp animate-delay-[400ms]"
+        >
+          About
+        </h1>
+      </div>
+    </div>
+
+    <div
+      class="about mt-[46px] max-md:mt-[26px] px-[24px] lg:px-[100px] flex max-lg:flex-col-reverse justify-between md:space-x-16 gap-2 relative min-h-screen"
+    >
+      <div class="lg:w-[60%]">
+        <p
+          class="text-justify mb-1 text-base leading-relaxed text-gray-900 animate-fadeInUp animate-delay-[100ms]"
+        >
+          I am Mahesh Raj Dahal, and my professional journey is a testament to a
+          deep-seated commitment to public service and the strengthening of
+          global partnerships. My career, spanning over two decades, has been
+          dedicated to cultivating sustainable economic development and
+          fostering robust financial and diplomatic ecosystems, particularly
+          within Nepal's evolving landscape.
+        </p>
+
+        <p
+          class="text-justify text-base leading-relaxed text-gray-900 mb-1 animate-fadeInUp animate-delay-[200ms]"
+        >
+          My professional journey has encompassed significant roles in
+          government, regulatory bodies, and public enterprises. I have
+          consistently focused on policy formulation, strategic planning, and
+          the implementation of initiatives that drive both economic growth and
+          social welfare. My academic foundation in economics, public
+          administration, and law has equipped me with a multifaceted
+          perspective, allowing me to approach complex challenges with
+          comprehensive, innovative solutions.
+        </p>
+
+        <p
+          class="text-justify text-base leading-relaxed text-gray-900 mb-1 animate-fadeInUp animate-delay-[300ms]"
+        >
+          A distinct highlight of my career was serving as the Ambassador of
+          Nepal to Australia from November 2019 to May 2021. This was a period
+          dedicated to reinforcing the strong bilateral ties between our
+          nations, promoting cultural exchange, and advocating for the welfare
+          of the Nepalese diaspora. I actively engaged with Australian
+          government officials and diverse community organizations, fostering
+          understanding and collaboration. Prior to this diplomatic engagement,
+          I also had the honor of serving as the Chairman of the University
+          Service Commission at Purbanchal University, where I contributed to
+          shaping academic excellence and institutional development.
+        </p>
+
+        <p
+          class="text-justify text-base leading-relaxed text-gray-900 mb-1 animate-fadeInUp animate-delay-[4000ms]"
+        >
+          Throughout my career, I've had the privilege of contributing to
+          pivotal projects that have shaped Nepal's financial and educational
+          architecture. I believe in fostering transparency, accountability, and
+          good governance, principles I have upheld in every position I've held.
+          My experience includes leading crucial reforms and spearheading
+          initiatives that have streamlined processes and enhanced public
+          service delivery.
+        </p>
+      </div>
+
+      <div class="lg:w-[45%] relative pb-20">
+        <div class="lg:sticky lg:top-20">
+          <div class="relative animate-scaleOut animate-delay-[200ms]">
+            <div
+              class="absolute w-20 h-20 bg-yellow-500 rounded-bl-lg z-[-1] bottom-[-10px] left-[-10px]"
+            ></div>
+            <img
+              src="./assets/Profile1.JPG"
+              class="w-full max-w-[500px] h-auto object-cover rounded-lg shadow-md"
+              alt="His Excellency Mahesh Raj Dahal, Ambassador of Nepal to Australia"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-20">
+      <h2
+        class="text-4xl text-gray-800 mb-12 text-center border-b border-gray-200 pb-4"
+      >
+        Professional Milestones
+      </h2>
+
+      <div class="relative">
+        <!-- Vertical line for timeline -->
+        <div
+          class="absolute left-0 md:left-1/2 w-0.5 h-full bg-gradient-to-b from-gray-300 to-transparent transform -translate-x-1/2"
+        ></div>
+
+        <div class="space-y-12">
+          <!-- Item 1 -->
+          <div class="relative pl-8 md:pl-0 md:flex justify-center">
+            <div class="md:w-5/12 md:pr-12 md:text-right mb-6 md:mb-0">
+              <div
+                class="absolute -left-1 md:left-1/2 top-1 w-3 h-3 rounded-full bg-blue-800 border-2 border-white transform -translate-x-1/2 z-10"
+              ></div>
+              <div
+                class="text-xs uppercase tracking-wider text-blue-700 font-medium"
+              >
+                2000 – Present
+              </div>
+              <h3 class="text-xl font-serif font-bold text-gray-800 mt-1">
+                Leadership & Management Consultant
+              </h3>
+              <p class="text-gray-600 mt-3 text-sm leading-relaxed">
+                Extensive experience in research, development, leadership
+                administration, and social consultancy for government bodies,
+                NGOs, INGOs, and corporate sectors.
+              </p>
+            </div>
+            <div class="hidden md:block md:w-5/12"></div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="relative pl-8 md:pl-0 md:flex justify-center">
+            <div class="hidden md:block md:w-5/12"></div>
+            <div class="md:w-5/12 md:pl-12">
+              <div
+                class="absolute -left-1 md:left-1/2 top-1 w-3 h-3 rounded-full bg-blue-800 border-2 border-white transform -translate-x-1/2 z-10"
+              ></div>
+              <div
+                class="text-xs uppercase tracking-wider text-blue-700 font-medium"
+              >
+                2019 – 2021
+              </div>
+              <h3 class="text-xl font-serif font-bold text-gray-800 mt-1">
+                Ambassador of Nepal to Australia
+              </h3>
+              <p class="text-gray-600 mt-3 text-sm leading-relaxed">
+                Represented Nepal in Australia and strengthened diplomatic ties
+                through strategic engagements and cultural diplomacy.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="relative pl-8 md:pl-0 md:flex justify-center">
+            <div class="md:w-5/12 md:pr-12 md:text-right mb-6 md:mb-0">
+              <div
+                class="absolute -left-1 md:left-1/2 top-1 w-3 h-3 rounded-full bg-blue-800 border-2 border-white transform -translate-x-1/2 z-10"
+              ></div>
+              <div
+                class="text-xs uppercase tracking-wider text-blue-700 font-medium"
+              >
+                2015 – 2018
+              </div>
+              <h3 class="text-xl font-serif font-bold text-gray-800 mt-1">
+                Executive Chairman, Nepal Television
+              </h3>
+              <p class="text-gray-600 mt-3 text-sm leading-relaxed">
+                Oversaw the strategic and operational management of Nepal's
+                national broadcaster, implementing modernization initiatives.
+              </p>
+            </div>
+            <div class="hidden md:block md:w-5/12"></div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="relative pl-8 md:pl-0 md:flex justify-center">
+            <div class="hidden md:block md:w-5/12"></div>
+            <div class="md:w-5/12 md:pl-12">
+              <div
+                class="absolute -left-1 md:left-1/2 top-1 w-3 h-3 rounded-full bg-blue-800 border-2 border-white transform -translate-x-1/2 z-10"
+              ></div>
+              <div
+                class="text-xs uppercase tracking-wider text-blue-700 font-medium"
+              >
+                2010 – 2012
+              </div>
+              <h3 class="text-xl font-serif font-bold text-gray-800 mt-1">
+                Board Member, Institute of Foreign Affairs
+              </h3>
+              <p class="text-gray-600 mt-3 text-sm leading-relaxed">
+                Contributed to foreign policy research and international
+                relations strategy development.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="relative pl-8 md:pl-0 md:flex justify-center">
+            <div class="md:w-5/12 md:pr-12 md:text-right mb-6 md:mb-0">
+              <div
+                class="absolute -left-1 md:left-1/2 top-1 w-3 h-3 rounded-full bg-blue-800 border-2 border-white transform -translate-x-1/2 z-10"
+              ></div>
+              <div
+                class="text-xs uppercase tracking-wider text-blue-700 font-medium"
+              >
+                2006 – 2009
+              </div>
+              <h3 class="text-xl font-serif font-bold text-gray-800 mt-1">
+                Board Member, High-Level Commission for IT
+              </h3>
+              <p class="text-gray-600 mt-3 text-sm leading-relaxed">
+                Advised on national information technology policy and digital
+                transformation initiatives.
+              </p>
+            </div>
+            <div class="hidden md:block md:w-5/12"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- foooter -->
+
+    <footer class="bg-[#16243C] text-white py-10">
+      <div class="container px-6 lg:px-20 mx-auto">
+        <div
+          class="flex flex-col lg:flex-row items-center justify-between gap-8 mb-8"
+        >
+          <!-- Brand Section -->
+          <div class="text-2xl font-bold text-center lg:text-left flex flex-1">
+            <h2 class="text-[32px] max-md:justify-center">Mahesh Raj Dahal</h2>
+          </div>
+
+          <!-- Enhanced Nav Section -->
+          <nav
+            class="flex justify-center gap-4 text-md max-lg:gap-12 max-lg:hidden"
+          >
+            <a href="#" class="hover:text-[#FFD700] transition-all duration-300"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="hover:text-[#FFD700] transition-all duration-300"
+              >About</a
+            >
+            <a
+              href="news.html"
+              class="hover:text-[#FFD700] transition-all duration-300"
+              >News</a
+            >
+            <a
+              href="videos.html"
+              class="hover:text-[#FFD700] transition-all duration-300"
+              >Videos</a
+            >
+            <a
+              href="gallery.html"
+              class="hover:text-[#FFD700] transition-all duration-300"
+              >Gallery</a
+            >
+            <a
+              href="contact.html"
+              class="hover:text-[#FFD700] transition-all duration-300"
+              >Contact</a
+            >
+          </nav>
+
+          <!-- Social Icons Section -->
+          <div class="flex space-x-4 justify-center lg:justify-end">
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md bg-opacity-80"
+            >
+              <img
+                src="./assets/facebook.svg"
+                alt="Facebook"
+                class="w-6 h-6 invert"
+              />
+            </a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md bg-opacity-80"
+            >
+              <img
+                src="./assets/insta.svg"
+                alt="Instagram"
+                class="w-6 h-6 invert"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mahesh-raj-dahal-059987316/"
+              target="_blank"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md bg-opacity-80"
+            >
+              <img
+                src="./assets/linkedin.svg"
+                alt="LinkedIn"
+                class="w-6 h-6 invert"
+              />
+            </a>
+            <a
+              href="https://twitter.com/mahesh_raj_dahal"
+              target="_blank"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md bg-opacity-80"
+            >
+              <img
+                src="./assets/twitter.png"
+                alt="Twitter"
+                class="w-6 h-6 invert"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- Separator Line -->
+        <hr class="border-white/20 my-4 mt-20" />
+
+        <!-- Footer Bottom Section -->
+        <div
+          class="flex justify-between items-center text-sm gap-2 max-md:flex-col max-md:gap-4 mt-5"
+        >
+          <!-- Copyright on the left -->
+          <div
+            class="text-center font-thin tracking-wider text-xs max-md:text-left"
+          >
+            &copy; 2025 Copyright. All rights reserved
+          </div>
+
+          <!-- Developed by on the right -->
+          <div class="flex items-center gap-2 max-md:justify-center">
+            <span class="text-xs">Developed by:</span>
+            <img src="./assets/kantipurwhite.svg" class="w-16 inline-block" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

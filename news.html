@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/script.js"></script>
+  </head>
+
+  <body>
+    <header
+      id="header"
+      class="flex z-50 justify-between items-center px-[24px] lg:px-[100px] py-3 fixed w-full z-10 top-0 bg-[#002244] text-white transition-colors duration-300"
+    >
+      <h1 class="text-2xl md:text-3xl tracking-tight leading-tight">
+        <span
+          class="bg-clip-text cursor-pointer"
+          onclick="window.location.href='index.html'"
+        >
+          Mahesh Raj Dahal
+        </span>
+      </h1>
+      <nav class="flex gap-10 text-[18px] max-lg:gap-6 max-lg:hidden">
+        <a href="index.html">Home</a>
+        <a href="about.html">About </a>
+        <a href="news.html" class="text-yellow-200" id="active">News</a>
+        <a href="videos.html">Videos</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger lg:hidden text-[22px]" id="hamburger">
+        &#9776;
+      </button>
+
+      <!-- Mobile Menu -->
+      <nav class="mobile-menu bg-[#F7D774]" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="news.html" class="text-yellow-200" id="active2">News</a>
+        <a href="videos.html">Videos</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <div class="news mt-[60px] max-md:mt-[57px] mb-6">
+      <div
+        class="relative bg-[#002244] py-8 px-8 shadow-xl overflow-hidden mb-6"
+      >
+        <!-- Background pattern -->
+        <div class="absolute inset-0 opacity-10">
+          <div
+            class="absolute top-0 left-0 w-32 h-32 bg-white rounded-full -translate-x-16 -translate-y-16"
+          ></div>
+          <div
+            class="absolute bottom-0 right-0 w-24 h-24 bg-white rounded-full translate-x-12 translate-y-12"
+          ></div>
+          <div
+            class="absolute top-1/2 right-1/4 w-16 h-16 bg-white transform rotate-45"
+          ></div>
+        </div>
+
+        <div class="relative flex justify-center">
+          <h1
+            class="text-[40px] leading-[48px] text-white tracking-wider animate-fadeInUp [animation-delay:0.1s] opacity-0"
+          >
+            In News
+          </h1>
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-2 max-sm:grid-cols-1 lg:grid-cols-3 mt-2 gap-4 px-[24px] lg:px-[100px] animate-fadeIn [animation-delay:0.2s] opacity-0"
+      >
+        <div
+          onclick="window.open('https://english.onlinekhabar.com/nepal-recalls-ambassador-to-australia-mahesh-raj-dahal.html', '_blank')"
+          class="flex flex-col border shadow-lg cursor-pointer rounded-xl transition-all duration-300 ease-in-out hover:-translate-y-1.5 hover:shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)] animate-scaleIn [animation-delay:0.5s] opacity-0"
+        >
+          <div class="relative w-full aspect-[404/227] overflow-hidden">
+            <img
+              src="https://english.onlinekhabar.com/wp-content/uploads/2021/05/Mahesh-raj-dahal.jpg"
+              alt=""
+              class="absolute w-full h-full object-cover rounded-t-xl transition-transform duration-300 ease-in-out hover:scale-105"
+            />
+          </div>
+          <img
+            src="https://english.onlinekhabar.com/wp-content/themes/onlinekhabar-english-2020/img/author-img.png"
+            class="h-[25px] w-[25px] mt-2 ml-2"
+            alt=""
+          />
+          <p class="text-gray-900 font-bold px-4 py-4">
+            Nepal recalls ambassador to Australia Mahesh Raj Dahal
+          </p>
+        </div>
+
+        <div
+          onclick="window.open('https://www.consulateofnepal.org.au/nepali-ambassador-perth-visit/', '_blank')"
+          class="flex flex-col border shadow-lg cursor-pointer rounded-xl transition-all duration-100 ease-in-out hover:-translate-y-1.5 hover:shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)] animate-scaleIn [animation-delay:0.2s] opacity-0"
+        >
+          <div class="relative w-full aspect-[404/227] overflow-hidden">
+            <img
+              src="https://www.consulateofnepal.org.au/wp-content/uploads/2020/03/HE_Dahal.jpg"
+              alt=""
+              class="absolute w-full h-full object-cover rounded-t-xl transition-transform duration-300 ease-in-out hover:scale-105"
+            />
+          </div>
+          <img
+            src="https://www.consulateofnepal.org.au/wp-content/uploads/2019/03/logo_title.png"
+            class="h-[25px] w-[100px] mt-2 ml-2"
+            alt=""
+          />
+          <p class="text-gray-900 font-bold p-4">
+            H.E. Mr Mahesh Raj Dahal on official visit to Perth, Western
+            Australia
+          </p>
+        </div>
+
+        <div
+          onclick="window.open('https://nepaleseaustralian.com.au/exclusive-interview-with-mahesh-raj-dahal-outgoing-ambassador-of-nepal-to-australia/', '_blank')"
+          class="flex flex-col border shadow-lg cursor-pointer rounded-xl transition-all duration-100 ease-in-out hover:-translate-y-1.5 hover:shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)] animate-scaleIn [animation-delay:0.3s] opacity-0"
+        >
+          <div class="relative w-full aspect-[404/227] overflow-hidden">
+            <img
+              src="./assets/Profile1.JPG"
+              alt=""
+              class="absolute w-full h-full object-cover rounded-t-xl transition-transform duration-100 ease-in-out hover:scale-105"
+            />
+          </div>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAYCAMAAADeQm2wAAABI1BMVEVHcEwmR3f6+vwnR3f++vomSHcpSnk9V4gnR3fu8/YmR3cmR3f///8nR3cmR3f//f0lRXYnR3cnR3YnRnf5qawmR3YmR3cnR3cnR3f0m6HzdHj29/n0eHyTpr33+fvy+fzUzNUdPXB9kq4nR3f+ycknRncnR3dRaY/4rK/AwtGEl7H4kpWWnrWsucqJm7X6p6rl6O1ccZfo6/DyWl/xTVLxV1vFztvwQ0knR3f7pKf09/r94uD2lZj7zM35f4L4sLP7zM7yhYn48vSlscVbdZhke51VbZOcq8CKlK32mJrHz9yZp70rR3j0f4PL097X3OS8xtT6vL8nR3fxKjDgoKnuHCVxgaB4j6w9W4X0bnPxSU8OPnPIsLzxV1yPdpPHl6UkSnudIfeHAAAAUnRSTlMAUw4qL2oOAXYIZW4T0r8bN+xgPzlItNyaDWyEf21CZyYUr6Nm9a77ueDh/P04jVL046yr385Y5IlqVUnusv74mvFk7hjH3VoYjYq3CbOSYcjMJeiihAAAAVlJREFUKJGtktVawzAYQNM2bVf3zp25uzvutPMNef+nAMY6xtgFF5yrJCe/5P8CwL/AQlVVA9QRQ+U8pUq5Vq6UPOqha93VzMlzO37lcblcOecP108tJt1OCwVAgILTSe4p+DRZ9Dp+bygUyl4cFIVx0xwkkrF5LFYonJ9lM3ta6C/NcXo6S95cN30QVr3ezC4tORyY49lb8t4nfG5RlkVPd1KIL3vT1egB3d3ey9psd9OrBNwKGQ/ut3OSep2PhK+1YtcRTCO+ZSP1MhsCgrj9CDM4OcrbMFG0whvj6SMarDscCBMxwnwEr+s6o1lyna4CImpING9EHEbUJnGYiFg114kAAIjEAJvBcZLDLokYgm378+eLLCAxnuN5LmzXw3acUAjrob68myI1mWYYRsM/YXBEwbaaLbovRYSmZZpGbBa0QqCbqfjdKPkbCm7mwsJjPwNQR0//xjsWeSn5Sa8rYQAAAABJRU5ErkJggg=="
+            class="h-[25px] w-[25px] mt-2 ml-2"
+            alt=""
+          />
+          <p class="text-gray-900 font-bold p-4">
+            Exclusive interview with Mahesh Raj Dahal, Outgoing Ambassador of
+            Nepal to Australia
+          </p>
+        </div>
+
+        <div
+          onclick="window.open('https://nepalesevoice.com/tag/mahesh-raj-dahal/', '_blank')"
+          class="flex flex-col border shadow-lg cursor-pointer rounded-xl transition-all duration-100 ease-in-out hover:-translate-y-1.5 hover:shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)] animate-scaleIn [animation-delay:0.4s] opacity-0"
+        >
+          <div class="relative w-full aspect-[404/227] overflow-hidden">
+            <img
+              src="https://nepalesevoice.com/wp-content/uploads/2021/05/Mahesh-Raj-Dahal-400x220.jpg"
+              alt=""
+              class="absolute w-full h-full object-cover rounded-t-xl transition-transform duration-100 ease-in-out hover:scale-105"
+            />
+          </div>
+          <img
+            src="https://nepalesevoice.com/wp-content/uploads/2020/08/cropped-Ok-1-01-1.png"
+            class="h-[25px] w-[90px] mt-2 ml-2"
+            alt=""
+          />
+          <p class="text-gray-900 font-bold p-4">
+            "I will respect the government's decision": Ambassador Mahesh Raj
+            Dahal upon ....
+          </p>
+        </div>
+
+        <div
+          onclick="window.open('https://english.ratopati.com/story/13804', '_blank')"
+          class="flex flex-col border shadow-lg cursor-pointer rounded-xl transition-all duration-100 ease-in-out hover:-translate-y-1.5 hover:shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)] animate-scaleIn [animation-delay:0.5s] opacity-0"
+        >
+          <div class="relative w-full aspect-[404/227] overflow-hidden">
+            <img
+              src="https://rpcdn.ratopati.com/media/albums/Dahal_JkfxlK9bFe.jpg"
+              alt=""
+              class="absolute w-full h-full object-cover rounded-t-xl transition-transform duration-100 ease-in-out hover:scale-105"
+            />
+          </div>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAkFBMVEWyNzexNDSwMTGxNDWvLCysICCrGRmsHByvLi6+TUvdqavy19j14uDqx8jDYV6tJyfpwL7////47u305+Lcn5msFxi2MTCyKCm4Pz2tJSW/U06oAADXlpPgn5/hrKnmurrw29j47O3OiIjsz8m6RUTMfHr59/SrHR2/VFWpDA7v09Powr3sx8nNgoHJeHjMcnElVgbWAAABPklEQVR4AX3SBXaEMAAEUAjuO3Rxd4f7365hu5baYHl8iHMc/2eokT/D/4fCA0VJlhXxV1RlTTdMy1bur1V6PNAhFwDuB66eIkmKovhBGAURf6ITu8DF9pIUmXHNraKEiwq1SFHUgKb1ROJ0KHo8Y0kUPRMpJUIGHVbnGhcT+di2Iceff47jcOuF1KOYZC+Zocsqza1D4tcQpgUYaVGekUvMOKldgVwmFE1kEYPilAGldxaHGfUbOt7UrkDjq4RGqrE5T5QK0wT663QzlSuxv9A5TMwpL90bGAFbpAX+a1UiG3mikjvaPWj9ryUbatjRHZ0NkJgl81Jo0QsDBomyu/cFc3ZgYJFIY59OZyHKAIVF+gff596JNfPnPWKLNCJ04dgO3SMXCAjVQBNZvP/72EIsMm/Jr8jm3PLCH+G5T7CKGrs3xvFbAAAAAElFTkSuQmCC"
+            class="h-[25px] w-[25px] mt-2 ml-2"
+            alt=""
+          />
+          <p class="text-gray-900 font-bold p-4">
+            Ambassador Dahal presents LoC to Governor General of New Zealand
+          </p>
+        </div>
+
+        <div
+          onclick="window.open('https://govhouse.wa.gov.au/2020/03/12th-marc-2020met-with-ambassador-of-nepal-h-e-mr-mahesh-raj-dahal/', '_blank')"
+          class="flex flex-col border shadow-lg cursor-pointer rounded-xl transition-all duration-100 ease-in-out hover:-translate-y-1.5 hover:shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)] animate-scaleIn [animation-delay:0.6s] opacity-0"
+        >
+          <div class="relative w-full aspect-[404/227] overflow-hidden">
+            <img
+              src="https://govhouse.wa.gov.au/wp-content/uploads/2020/03/IMG_3982-Medium-1280x709.jpg"
+              alt=""
+              class="absolute w-full h-full object-cover rounded-t-xl transition-transform duration-100 ease-in-out hover:scale-105"
+            />
+          </div>
+          <img
+            src="https://govhouse.wa.gov.au/wp-content/uploads/2022/10/logo-color-tudor.png"
+            class="h-[25px] w-[90px] mt-2 ml-2"
+            alt=""
+          />
+          <p class="text-gray-900 font-bold p-4">
+            Met with Ambassador of Nepal, H.E. Mr Mahesh Raj Dahal
+          </p>
+        </div>
+
+        <div
+          onclick="window.open('http://myrepublica.nagariknetwork.com/news/ambassadors-take-oath', '_blank')"
+          class="flex flex-col border shadow-lg cursor-pointer rounded-xl transition-all duration-100 ease-in-out hover:-translate-y-1.5 hover:shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)] animate-scaleIn [animation-delay:0.7s] opacity-0"
+        >
+          <div class="relative w-full aspect-[404/227] overflow-hidden">
+            <img
+              src="https://republicaimg.nagariknewscdn.com/shared/web/uploads/media/oathtaking_20191015192413.jpg"
+              alt=""
+              class="absolute w-full h-full object-cover rounded-t-xl transition-transform duration-100 ease-in-out hover:scale-105"
+            />
+          </div>
+          <img
+            src="https://republicajscss.nagariknewscdn.com//img/logo.svg"
+            class="h-[25px] w-[25px] mt-2 ml-2"
+            alt=""
+          />
+          <p class="text-gray-900 font-bold p-4">
+            Newly appointed ambassadors of Nepal to Australia and Spain
+            respectively took an oath..
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- foooter -->
+
+    <footer class="bg-[#16243C] text-white py-10">
+      <div class="container px-6 lg:px-20 mx-auto">
+        <div
+          class="flex flex-col lg:flex-row items-center justify-between gap-8 mb-8"
+        >
+          <!-- Brand Section -->
+          <div class="text-2xl font-bold text-center lg:text-left flex flex-1">
+            <h2 class="text-[32px] max-md:justify-center">Mahesh Raj Dahal</h2>
+          </div>
+
+          <!-- Enhanced Nav Section -->
+          <nav
+            class="flex justify-center gap-4 text-md max-lg:gap-12 max-lg:hidden"
+          >
+            <a href="#" class="hover:text-[#FFD700] transition-all duration-300"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="hover:text-[#FFD700] transition-all duration-300"
+              >About</a
+            >
+            <a
+              href="news.html"
+              class="hover:text-[#FFD700] transition-all duration-300"
+              >News</a
+            >
+            <a
+              href="videos.html"
+              class="hover:text-[#FFD700] transition-all duration-300"
+              >Videos</a
+            >
+            <a
+              href="gallery.html"
+              class="hover:text-[#FFD700] transition-all duration-300"
+              >Gallery</a
+            >
+            <a
+              href="contact.html"
+              class="hover:text-[#FFD700] transition-all duration-300"
+              >Contact</a
+            >
+          </nav>
+
+          <!-- Social Icons Section -->
+          <div class="flex space-x-4 justify-center lg:justify-end">
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md bg-opacity-80"
+            >
+              <img
+                src="./assets/facebook.svg"
+                alt="Facebook"
+                class="w-6 h-6 invert"
+              />
+            </a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md bg-opacity-80"
+            >
+              <img
+                src="./assets/insta.svg"
+                alt="Instagram"
+                class="w-6 h-6 invert"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mahesh-raj-dahal-059987316/"
+              target="_blank"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md bg-opacity-80"
+            >
+              <img
+                src="./assets/linkedin.svg"
+                alt="LinkedIn"
+                class="w-6 h-6 invert"
+              />
+            </a>
+            <a
+              href="https://twitter.com/mahesh_raj_dahal"
+              target="_blank"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md bg-opacity-80"
+            >
+              <img
+                src="./assets/twitter.png"
+                alt="Twitter"
+                class="w-6 h-6 invert"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- Separator Line -->
+        <hr class="border-white/20 my-4 mt-20" />
+
+        <!-- Footer Bottom Section -->
+        <div
+          class="flex justify-between items-center text-sm gap-2 max-md:flex-col max-md:gap-4 mt-5"
+        >
+          <!-- Copyright on the left -->
+          <div
+            class="text-center font-thin tracking-wider text-xs max-md:text-left"
+          >
+            &copy; 2025 Copyright. All rights reserved
+          </div>
+
+          <!-- Developed by on the right -->
+          <div class="flex items-center gap-2 max-md:justify-center">
+            <span class="text-xs">Developed by:</span>
+            <img src="./assets/kantipurwhite.svg" class="w-16 inline-block" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- <div class="footer pt-2 bg-[#C9B037] bg-opacity-80 text-gray-800 font-medium">
+    <div class="mt-2 px-[20px] py-4 lg:px-[100px] w-full flex">
+      <div class="flex max-md:flex-col justify-between w-full">
+        <div class="flex flex-col md:w-[60%] gap-4">
+          <div class="relative">
+            <div class="absolute h-[48px] w-2 bg-blue-700 left-0 max-md:left-[50px]"></div>
+            <h2 class="text-[32px] flex flex-1 ml-4 font-extrabold  max-md:justify-center">Mahesh Raj Dahal</h2>
+          </div>
+          
+          <p class="text-justify">Actively led international organizations including JCI Nepal, Rotary, and
+            Red Cross, channeling my diplomatic experience into meaningful civic engagement. My work in these
+            roles has been recognized with multiple awards, reflecting my dedication to creating positive social
+            change through collaborative leadership.</p>
+        </div>
+        <div class="flex p-4 gap-4 max-md:justify-center">
+          <img src="./assets/linkedin.svg" class="size-[30px] cursor-pointer rounded-lg"
+            onclick="window.open('https://www.linkedin.com/in/mahesh-raj-dahal-059987316/', '_blank')"
+            alt="">
+          <img src="./assets/facebook.svg" class="size-[30px] cursor-pointer rounded-lg"
+            onclick="window.open('https://www.linkedin.com/in/mahesh-raj-dahal-059987316/', '_blank')"
+            alt="">
+          <img src="./assets/insta.svg" class="size-[30px] cursor-pointer rounded-lg"
+            onclick="window.open('https://www.linkedin.com/in/mahesh-raj-dahal-059987316/', '_blank')"
+            alt="">
+        </div>
+      </div>
+    </div>
+    <hr class="border-t-2 border-[#002244] mt-4 opacity-50">
+    <div class="flex px-[20px] lg:px-[100px] justify-between pt-4 pb-8 items-center max-md:flex-col space-y-4 text-semibold">
+      <p>All rights reserved @2025</p>
+      <div class="flex items-center gap-2">
+        <p>Developed by:</p>
+        <img src="./assets/kantipur.svg">
+      </div>
+    </div>
+  </div> -->
+  </body>
+</html>
