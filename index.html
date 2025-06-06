@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/main.png" type="image/png" />
   <title>Mahesh Raj Dahal</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,83 +58,86 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero"
-    class="max-md:mt-[28px] max-sm:mt-0 min-h-screen max-w-screen bg-gray-50  flex items-center justify-center  md:pt-20 overflow-x-hidden ">
-    <div class="w-full  mx-auto px-[24px] lg:px-[100px] grid lg:grid-cols-2 gap-12 items-center">
-<!-- Hero Left Part -->
-<div class="space-y-6 animate-fade-in text-left">
-  <!-- Heading and Subheading -->
-  <div class="space-y-3">
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-800 leading-tight">
-      <span class="bg-gradient-to-r from-blue-900 via-indigo-900 to-blue-600 bg-clip-text text-transparent">
-        Mahesh Raj Dahal
-      </span>
-    </h1>
+<!-- Hero Section -->
+<section id="hero"
+  class="mt-6 md:mt-12 min-h-screen bg-gray-50 flex items-center justify-center px-4 sm:px-6 lg:px-[100px] overflow-x-hidden">
+  
+  <div class="w-full max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    
+    <!-- Hero Left Part -->
+    <div class="space-y-6 text-left">
+      <!-- Heading -->
+      <div class="space-y-3 mt-10">
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 leading-tight typing-effect">
+          <span class="bg-gradient-to-r from-blue-900 via-indigo-900 to-blue-600 bg-clip-text text-transparent">
+            Mahesh Raj Dahal
+          </span>
+        </h1>
 
-    <p class="text-base sm:text-lg md:text-xl text-gray-600 tracking-wide">
-      Former Australian Ambassador <span class="text-blue-600 font-medium">|</span> Distinguished Diplomat <span class="text-blue-600 font-medium">|</span> International Relations Expert
-    </p>
-  </div>
+        <!-- Subtitle -->
+        <p class="text-base sm:text-lg md:text-xl text-gray-600 tracking-wide animate-slide-up">
+          Former Australian Ambassador <span class="text-blue-600 font-medium">|</span> Distinguished Diplomat <span class="text-blue-600 font-medium">|</span> International Relations Expert
+        </p>
+      </div>
 
-  <!-- Call to Action Button -->
-<div class="flex flex-wrap gap-4">
-    <!-- Learn More Button -->
-  <button onclick="window.location.href='about.html'"
-    class="flex items-center gap-2 bg-white border border-[#3B82F6] text-[#3B82F6] hover:bg-[#3B82F6] hover:text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out">
-    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
-    </svg>
-    Learn More
-  </button>
-  <!-- Get in Touch Button -->
-  <button onclick="window.location.href='contact.html'"
-    class="flex items-center gap-2 bg-[#3B82F6] hover:bg-white text-white hover:text-[#3B82F6] hover:border hover:border-[#3B82F6] font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out">
-    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M21 8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2V8z" />
-      <path stroke-linecap="round" stroke-linejoin="round" d="M21 8l-9 6-9-6" />
-    </svg>
-    Get in Touch
-  </button>
-</div>
-</div>
+      <div class="flex flex-wrap gap-4">
+        <!-- Learn More -->
+        <button onclick="window.location.href='about.html'"
+          class="flex items-center gap-2 bg-white border border-[#3B82F6] text-[#3B82F6] hover:bg-[#3B82F6] hover:text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+          </svg>
+          Learn More
+        </button>
 
+        <!-- Get in Touch -->
+        <button onclick="window.location.href='contact.html'"
+          class="flex items-center gap-2 bg-[#3B82F6] hover:bg-white text-white hover:text-[#3B82F6] hover:border hover:border-[#3B82F6] font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2V8z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8l-9 6-9-6" />
+          </svg>
+          Get in Touch
+        </button>
+      </div>
+    </div>
 
+    <!-- Swiper Container -->
+    <div class="relative w-full">
+      <!-- Gradient Background Behind Carousel -->
+      <div class="absolute inset-0 rotate-6 bg-gradient-to-r from-blue-400 to-amber-400 rounded-2xl z-0 hidden md:block"></div>
 
-      <!-- Swiper Container -->
+      <!-- Swiper -->
       <div
-        class="swiper mySwiper2 w-full max-w-4xl mx-auto  rounded-2xl  shadow-2xl overflow-visible max-md:w-[320px] pb-10 h-[500px] max-md:h-[320px] md:pb-20 md:mt-10 lg:mt-0">
-        <div
-          class="absolute w-full lg:h-[500px] md:w-[85%] lg:w-full  inset-0 bg-gradient-to-r from-blue-400 to-amber-400 rounded-2xl transform rotate-6">
-        </div>
-        <div class="swiper-wrapper relative md:w-[80%] lg:w-full ">
-
+        class="swiper mySwiper2 relative z-10 w-full max-w-2xl mx-auto rounded-2xl shadow-2xl overflow-hidden h-[300px] sm:h-[360px] md:h-[420px] lg:h-[500px]">
+        <div class="swiper-wrapper">
           <!-- Slide 1 -->
           <div class="swiper-slide">
             <img src="./assets/gallery10.jpg" alt="Image 1"
-              class="w-auto h-[320px] md:h-[500px] object-cover rounded-2xl" />
+              class="w-full h-full object-cover rounded-2xl" />
           </div>
           <!-- Slide 2 -->
           <div class="swiper-slide">
             <img src="./assets/gallery6.jpg" alt="Image 2"
-              class="w-auto h-[320px] md:h-[500px] object-cover rounded-2xl" />
+              class="w-full h-full object-cover rounded-2xl" />
           </div>
           <!-- Slide 3 -->
           <div class="swiper-slide">
             <img src="./assets/gallery3.jpg" alt="Image 3"
-              class="w-auto h-[320px] md:h-[500px] object-cover  rounded-2xl" />
+              class="w-full h-full object-cover rounded-2xl" />
           </div>
           <!-- Slide 4 -->
           <div class="swiper-slide">
             <img src="./assets/gallery4.jpg" alt="Image 4"
-              class="w-auto h-[320px] md:h-[500px] object-cover rounded-2xl" />
+              class="w-full h-full object-cover rounded-2xl" />
           </div>
         </div>
       </div>
     </div>
 
-  </section>
   </div>
+</section>
+
 
 <!-- About me section -->
 <div class="bg-[#E5E5E5] bg-opacity-40 pt-12 pb-16">
