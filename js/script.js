@@ -135,3 +135,18 @@ const swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+// video open in center
+function openModal(videoId) {
+  const modal = document.getElementById("videoModal");
+  const iframe = document.getElementById("videoIframe");
+  iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+  modal.classList.remove("hidden");
+}
+
+function closeModal() {
+  const modal = document.getElementById("videoModal");
+  const iframe = document.getElementById("videoIframe");
+  iframe.src = ""; // Stop video
+  modal.classList.add("hidden");
+}

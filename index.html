@@ -25,7 +25,6 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-
 <body>
   <header
     class="flex  justify-between items-center px-[24px] lg:px-[100px] py-4 fixed w-full z-50 top-0 bg-[#002244] text-white ">
@@ -37,7 +36,7 @@
       </span>
 
     </h1>
-    <nav class="flex gap-10 text-[18px] max-lg:gap-6 max-lg:hidden ">
+    <nav class="flex gap-8 text-[15px] max-lg:gap-6 max-lg:hidden ">
       <a href="#" class="text-yellow-200">Home</a>
       <a href="about.html">About</a>
       <a href="news.html">News</a>
@@ -62,28 +61,43 @@
   <section id="hero"
     class="max-md:mt-[28px] max-sm:mt-0 min-h-screen max-w-screen bg-gray-50  flex items-center justify-center  md:pt-20 overflow-x-hidden ">
     <div class="w-full  mx-auto px-[24px] lg:px-[100px] grid lg:grid-cols-2 gap-12 items-center">
-      <!-- hero left part -->
-<div class="space-y-6 animate-fade-in">
-  <div class="space-y-4 text-left">
-    <h1 class="text-4xl sm:text-5xl md:text-6xl py-2 text-gray-700 font-extrabold tracking-tight leading-tight typing-effect typing-smoooth">
-      Mahesh Raj Dahal
+<!-- Hero Left Part -->
+<div class="space-y-6 animate-fade-in text-left">
+  <!-- Heading and Subheading -->
+  <div class="space-y-3">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-800 leading-tight">
+      <span class="bg-gradient-to-r from-blue-900 via-indigo-900 to-blue-600 bg-clip-text text-transparent">
+        Mahesh Raj Dahal
+      </span>
     </h1>
-    <h1 class="text-lg sm:text-xl md:text-2xl text-gray-700 tracking-wider">
-      Former Australian Ambassador | Distinguished Diplomat | International Relations Expert
-    </h1>
+
+    <p class="text-base sm:text-lg md:text-xl text-gray-600 tracking-wide">
+      Former Australian Ambassador <span class="text-blue-600 font-medium">|</span> Distinguished Diplomat <span class="text-blue-600 font-medium">|</span> International Relations Expert
+    </p>
   </div>
 
-  <div class="space-y-4 text-left">
-    <div class="flex justify-left gap-6">
-<!-- Updated Button with Teal Color -->
-<button onclick="window.location.href='contact.html'" 
-  class="bg-[#3B82F6] hover:bg-[#2563EB] text-white px-8 py-3 rounded-lg transition-colors duration-300 ease-in-out">
-  Get in Touch
-</button>
-
-    </div>
-  </div>
+  <!-- Call to Action Button -->
+<div class="flex flex-wrap gap-4">
+    <!-- Learn More Button -->
+  <button onclick="window.location.href='about.html'"
+    class="flex items-center gap-2 bg-white border border-[#3B82F6] text-[#3B82F6] hover:bg-[#3B82F6] hover:text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+    </svg>
+    Learn More
+  </button>
+  <!-- Get in Touch Button -->
+  <button onclick="window.location.href='contact.html'"
+    class="flex items-center gap-2 bg-[#3B82F6] hover:bg-white text-white hover:text-[#3B82F6] hover:border hover:border-[#3B82F6] font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M21 8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2V8z" />
+      <path stroke-linecap="round" stroke-linejoin="round" d="M21 8l-9 6-9-6" />
+    </svg>
+    Get in Touch
+  </button>
 </div>
+</div>
+
 
 
       <!-- Swiper Container -->
@@ -119,63 +133,69 @@
     </div>
 
   </section>
-
-
   </div>
 
+<!-- About me section -->
+<div class="bg-[#E5E5E5] bg-opacity-40 pt-12 pb-16">
+<!-- Section title -->
+<div class="flex justify-between items-center px-6 lg:px-[100px] mb-6">
+  <div class="flex items-center gap-4 relative">
+    <!-- Vertical Accent Pill -->
+    <div class="h-[36px] w-[3px] bg-gradient-to-b from-gray-800 to-blue-800 rounded-full shadow-md"></div>
 
-  <div class="bg-[#E5E5E5] bg-opacity-40 pt-12 pb-10">
-     <div class="flex justify-between items-center px-6 lg:px-[100px] ">
-      <div class="flex gap-2">
-        <div class="h-[36px] w-2 bg-gradient-to-r from-blue-400 to-blue-800 "></div>
-        <h1 class="text-[22px] font-bold text-gray-800">About me</h1>
-      </div>
+    <!-- Gradient Text with Underline -->
+    <h1 class="text-2xl sm:text-[22px] font-bold text-gray-800 relative">
+      About Me
+    </h1>
+  </div>
+</div>
 
-      <div class="group inline-block mb-4">
-      </div>
 
-    </div>
-    <div class="about mt-[6px] px-[24px] lg:px-[100px] flex max-lg:flex-col-reverse justify-between md:space-x-16 gap-2 relative  ">
-    
-    <div class="lg:w-[60%]">
-      <p class="text-justify mb-1 text-base leading-relaxed text-gray-900 animate-fadeInUp animate-delay-[400ms] tracking-wide">I am Mahesh Raj Dahal, and my
-        professional journey is a testament to a deep-seated commitment to public
+
+  <!-- Content area -->
+  <div class="about px-[24px] lg:px-[100px] flex flex-col justify-between gap-6 relative animate-fadeInUp">
+
+    <!-- Paragraphs -->
+    <div class="lg:w-full space-y-4">
+      <p class="text-justify text-base leading-relaxed text-gray-900 tracking-wide">
+        I am Mahesh Raj Dahal, and my professional journey is a testament to a deep-seated commitment to public
         service and the strengthening of global partnerships. My career, spanning over two decades, has been
         dedicated to cultivating sustainable economic development and fostering robust financial and diplomatic
         ecosystems, particularly within Nepal's evolving landscape.
       </p>
 
-      <p class="text-justify text-base leading-relaxed text-gray-900 mb-1 animate-fadeInUp animate-delay-[600ms] tracking-wide">My professional journey has
-        encompassed significant roles in government, regulatory bodies, and public
+      <p class="text-justify text-base leading-relaxed text-gray-900 tracking-wide">
+        My professional journey has encompassed significant roles in government, regulatory bodies, and public
         enterprises. I have consistently focused on policy formulation, strategic planning, and the
         implementation of initiatives that drive both economic growth and social welfare. My academic foundation
         in economics, public administration, and law has equipped me with a multifaceted perspective, allowing
-        me to approach complex challenges with comprehensive, innovative solutions.</p>
+        me to approach complex challenges with comprehensive, innovative solutions.
+      </p>
 
-         <div class="group inline-block mb-4">
+      <!-- Call to Action -->
+      <div class="group inline-block">
         <button onclick="window.location.href='about.html'"
-          class="px-4 py-2 bg-[#3B82F6] hover:bg-[#2563EB] text-white rounded-lg  text-medium mt-2 transition-all duration-300 ease-in-out flex items-center gap-2">
-          Show more<span
-            class="transform transition-transform duration-300 group-hover:translate-x-1 max-md:mb-1">→</span>
+          class="px-4 py-2 bg-[#3B82F6] hover:bg-[#2563EB] text-white rounded-lg text-medium mt-2 transition-all duration-300 ease-in-out flex items-center gap-2">
+          Show more
+          <span class="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
         </button>
       </div>
-    
     </div>
 
-
-    <div class="lg:w-[45%] relative pb-10 max-md:hidden">
-      <div class="lg:sticky lg:top-20">
-        <div class="relative animate-fadeInRight animate-delay-[500ms]">
-          <div class="absolute w-20 h-20 bg-yellow-500 rounded-bl-lg z-[-1] bottom-[-10px] left-[-10px]"></div>
-          <img src="./assets/Profile1.JPG" class="w-full max-w-[500px] h-auto object-cover rounded-lg shadow-md " alt="His Excellency Mahesh Raj Dahal, Ambassador of Nepal to Australia" />
-        </div>
-      </div>
+    <!-- Quote Signature -->
+    <div class="pt-8 text-center">
+      <p class="text-gray-700 italic text-lg md:text-xl fade-up-signature opacity-70 transition duration-1000">
+        “Dedicated to service, driven by purpose, guided by values.”
+      </p>
+      <p class="mt-4 text-gray-800 font-semibold text-sm tracking-widest opacity-60">
+        — Mahesh Raj Dahal
+      </p>
     </div>
   </div>
-  </div>
+</div>
+
     
    
-  
 
   <div class="news bg-gray-50 px-[24px] pb-20 lg:px-[100px]  bg-opacity-40 py-10 ">
     <div class="flex justify-between items-center">
@@ -196,9 +216,9 @@
 
     </div>
     <div class="grid grid-cols-2 max-sm:grid-cols-1 lg:grid-cols-3 mt-2 gap-4">
-      <div
-        onclick="window.open('https://english.onlinekhabar.com/nepal-recalls-ambassador-to-australia-mahesh-raj-dahal.html', '_blank')"
-        class="flex flex-col border bg-white shadow-lg hover:cursor-pointer rounded-xl hover:scale-105 transition-all duration-400  ">
+        <div
+          onclick="window.open('https://english.onlinekhabar.com/nepal-recalls-ambassador-to-australia-mahesh-raj-dahal.html', '_blank')"
+          class="flex flex-col border bg-white shadow-lg hover:shadow-xl hover:-translate-y-2 hover:cursor-pointer rounded-xl transition-transform duration-300 ease-in-out">
         <div class="relative w-full aspect-[404/227] overflow-hidden  ">
           <img src="https://english.onlinekhabar.com/wp-content/uploads/2021/05/Mahesh-raj-dahal.jpg" alt=""
             class="absolute w-full h-full object-cover rounded-t-xl ">
@@ -210,7 +230,7 @@
       </div>
 
       <div onclick="window.open('https://www.consulateofnepal.org.au/nepali-ambassador-perth-visit/', '_blank')"
-        class="flex flex-col border bg-white shadow-lg hover:cursor-pointer rounded-xl hover:scale-105 transition-all duration-400 ">
+            class="flex flex-col border bg-white shadow-lg hover:shadow-xl hover:-translate-y-2 hover:cursor-pointer rounded-xl transition-transform duration-300 ease-in-out">
         <div class="relative w-full aspect-[404/227] overflow-hidden">
           <img src="https://www.consulateofnepal.org.au/wp-content/uploads/2020/03/HE_Dahal.jpg" alt=""
             class="absolute w-full h-full object-cover rounded-t-xl">
@@ -224,7 +244,7 @@
 
       <div
         onclick="window.open('https://nepaleseaustralian.com.au/exclusive-interview-with-mahesh-raj-dahal-outgoing-ambassador-of-nepal-to-australia/', '_blank')"
-        class="flex flex-col border bg-white shadow-lg hover:cursor-pointer rounded-xl hover:scale-105 transition-all duration-400 ">
+          class="flex flex-col border bg-white shadow-lg hover:shadow-xl hover:-translate-y-2 hover:cursor-pointer rounded-xl transition-transform duration-300 ease-in-out">
         <div class="relative w-full aspect-[404/227] overflow-hidden">
           <img src="./assets/Profile1.JPG" alt="" class="absolute w-full h-full object-cover rounded-t-xl">
           <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition-all rounded-t-xl  "></div>
@@ -237,7 +257,7 @@
       </div>
       <div
         onclick="window.open('https://nepalesevoice.com/tag/mahesh-raj-dahal/', '_blank')"
-        class="flex flex-col border bg-white shadow-lg hover:cursor-pointer rounded-xl hover:scale-105 transition-all duration-400">
+          class="flex flex-col border bg-white shadow-lg hover:shadow-xl hover:-translate-y-2 hover:cursor-pointer rounded-xl transition-transform duration-300 ease-in-out">
         <div class="relative w-full aspect-[404/227] overflow-hidden">
           <img src="./assets/gallery10.jpg" alt="" class="absolute w-full h-full object-cover rounded-t-xl">
           <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition-all rounded-t-xl  "></div>
@@ -249,7 +269,7 @@
       </div>
       <div
         onclick="window.open('https://english.ratopati.com/story/13804', '_blank')"
-        class="flex flex-col border bg-white shadow-lg hover:cursor-pointer rounded-xl hover:scale-105 transition-all duration-400">
+          class="flex flex-col border bg-white shadow-lg hover:shadow-xl hover:-translate-y-2 hover:cursor-pointer rounded-xl transition-transform duration-300 ease-in-out">
         <div class="relative w-full aspect-[404/227] overflow-hidden">
           <img src="https://rpcdn.ratopati.com/media/albums/Dahal_JkfxlK9bFe.jpg" alt="" class="absolute w-full h-full object-cover rounded-t-xl">
           <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition-all rounded-t-xl  "></div>
@@ -261,7 +281,7 @@
       </div>
        <div
         onclick="window.open('https://govhouse.wa.gov.au/2020/03/12th-marc-2020met-with-ambassador-of-nepal-h-e-mr-mahesh-raj-dahal/', '_blank')"
-        class="flex flex-col border bg-white shadow-lg hover:cursor-pointer rounded-xl hover:scale-105 transition-all duration-400 ">
+          class="flex flex-col border bg-white shadow-lg hover:shadow-xl hover:-translate-y-2 hover:cursor-pointer rounded-xl transition-transform duration-300 ease-in-out">
         <div class="relative w-full aspect-[404/227] overflow-hidden">
           <img src="./assets/gallery8.jpg" alt="" class="absolute w-full h-full object-cover rounded-t-xl">
           <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition-all rounded-t-xl  "></div>
@@ -271,9 +291,10 @@
           class="h-[25px] w-[25px] mt-2 ml-2" alt="">
         <p class="text-gray-900 font-bold px-2 pt-2 pb-6">Met with Ambassador of Nepal, H.E. Mr Mahesh Raj Dahal</p>
       </div>
-      
     </div>
   </div>
+
+  <!-- video section -->
   <div class="videos  px-[24px] lg:px-[100px]  w-full bg-[#3B82F6] bg-opacity-20 pt-10 pb-16">
     <div class="flex justify-between items-center ">
       <div class="flex gap-2">
@@ -289,119 +310,108 @@
           View all <span class="transform transition-transform duration-300 group-hover:translate-x-1 mb-1">→</span>
         </button>
       </div>
-
     </div>
     <div class="grid grid-cols-2 max-sm:grid-cols-1 lg:grid-cols-3 mt-2 gap-6 ">
-      <!-- Video 1 - Autoplay in mute -->
-      <div class="flex flex-col border shadow-lg rounded-xl hover:scale-105 transition-all bg-white">
-        <div class="relative pt-[56.25%]"> <!-- 16:9 Aspect Ratio Container -->
-          <iframe src="https://www.youtube.com/embed/Gt9DKsC9ixY?autoplay=1&mute=1&enablejsapi=1"
-            class="absolute top-0 left-0 w-full h-full rounded-t-xl" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-        </div>
-        <p class="text-gray-900 font-bold p-2 pt-2 pb-6">नेपालमा अमेरिकी चासो घट्दो, विश्व राजनीतिमा ट्रम्प हावी : महेश
-          दाहाल, पूर्व
-          राजदूत</p>
+      <!-- Modal for Video Playback -->
+<div id="videoModal" class="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center hidden">
+  <div class="relative w-[90%] max-w-4xl aspect-video">
+    <iframe id="videoIframe" class="w-full h-full rounded-lg" src="" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <button onclick="closeModal()"
+      class="absolute top-2 right-4 text-white text-xl font-bold bg-red-600 hover:bg-red-700 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition">
+      &times;
+    </button>
+  </div>
+</div>
+
+<!-- Video 1 Thumbnail Trigger -->
+  <div onclick="openModal('Gt9DKsC9ixY')" class="flex flex-col border shadow-lg rounded-xl hover:scale-105 transition-all bg-white cursor-pointer">
+    <div class="relative pt-[56.25%]">
+      <img src="https://img.youtube.com/vi/Gt9DKsC9ixY/hqdefault.jpg" alt="Video 1"
+        class="absolute top-0 left-0 w-full h-full object-cover rounded-t-xl">
+      <div class="absolute inset-0 flex items-center justify-center">
+      <img src="./assets/youtubeLogo.png"
+        alt="YouTube Logo" class="w-28 h-28 object-contain">
       </div>
-
-      <!-- Video 2 -->
-      <div onclick="window.open('https://www.youtube.com/watch?v=DdeoerScEs0', '_blank')"
-        class="flex flex-col border shadow-lg hover:cursor-pointer rounded-xl hover:scale-105 transition-all bg-white">
-        <div class="relative pt-[56.25%]"> <!-- 16:9 Aspect Ratio Container -->
-          <img
-            src="https://i.ytimg.com/vi/DdeoerScEs0/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAwTZf-P61XidIxpG7JGetd3nC6Vw"
-            alt="Video thumbnail" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-xl">
-          <div class="absolute inset-0 flex items-center justify-center">
-            <svg class="w-16 h-16 text-red-600" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </div>
-        </div>
-        <p class="text-gray-900 font-bold p-2 pb-6">
-          Mahesh Raj Dahal (Ambassador to Australia) | Good Morning Nepal - 27 February 2021</p>
-      </div>
-
-      <!-- Video 3 -->
-      <div onclick="window.open('https://www.youtube.com/watch?v=kqk1HGlFB4U', '_blank')"
-        class="flex flex-col border shadow-lg hover:cursor-pointer rounded-xl hover:scale-105 transition-all bg-white">
-        <div class="relative pt-[56.25%]"> <!-- 16:9 Aspect Ratio Container -->
-          <img
-            src="https://i.ytimg.com/vi/kqk1HGlFB4U/hqdefault.jpg?sqp=-oaymwEnCOADEI4CSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBpnxU1riDBNdf5dLgxGqQcusewsA"
-            alt="Video thumbnail" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-xl">
-          <div class="absolute inset-0 flex items-center justify-center">
-            <svg class="w-16 h-16 text-red-600" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </div>
-        </div>
-        <p class="text-gray-900 font-bold p-2 pb-6">
-          A Talk with Mahesh Raj Dahal, Ambassador of Nepal to Australia</p>
-      </div>
-
-       <div onclick="window.open('https://www.youtube.com/watch?v=XFgQoOrOPnA', '_blank')"
-        class="flex flex-col border shadow-lg hover:cursor-pointer rounded-xl hover:scale-105 transition-all bg-white">
-        <div class="relative pt-[56.25%]">
-          <img src="https://i.ytimg.com/vi/XFgQoOrOPnA/hq720.jpg?sqp=-oaymwFBCNAFEJQDSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AHUBoAC4AOKAgwIABABGGUgUShFMA8=&rs=AOn4CLAQLnmjJ1zj8U4ZSFDNJizHs_W7Rw"
-            alt="Video thumbnail" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-xl transition-transform hover:scale-105">
-          <div class="absolute inset-0 flex items-center justify-center">
-            <svg class="w-16 h-16 text-red-600 transition-transform hover:scale-110 hover:opacity-90" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </div>
-        </div>
-        <p class="text-gray-900 font-bold p-2 pt-2 pb-6">
-          AAERI NEPAL | 3rd Annual General Meeting | H.E. Mahesh Dahal, Nepalese Ambassador to Australia
-        </p>
-      </div>
-
-      <div onclick="window.open('https://www.youtube.com/watch?v=cmziCdLqJp4', '_blank')"
-        class="flex flex-col border shadow-lg hover:cursor-pointer rounded-xl hover:scale-105 transition-all bg-white ">
-        <div class="relative pt-[56.25%]">
-          <img src="https://i.ytimg.com/vi/cmziCdLqJp4/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDHgWoMWNqpFckI0Zz5ClLarZxdMg"
-            alt="Video thumbnail" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-xl transition-transform hover:scale-105">
-          <div class="absolute inset-0 flex items-center justify-center">
-            <svg class="w-16 h-16 text-red-600 transition-transform hover:scale-110 hover:opacity-90" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </div>
-        </div>
-        <p class="text-gray-900 font-bold p-2 pt-2 pb-6">
-          His Excellency Mr Mahesh Raj Dahal , Ambassador of Nepal to Australia with HB Tamrakar ( COVID-19 )
-        </p>
-      </div>
-
-      <div onclick="window.open('https://www.youtube.com/watch?v=uxMhWBIOqS8', '_blank')"
-        class="flex flex-col border shadow-lg hover:cursor-pointer rounded-xl hover:scale-105 transition-all bg-white">
-        <div class="relative pt-[56.25%]">
-          <img src="https://i.ytimg.com/vi/uxMhWBIOqS8/hq720.jpg?sqp=-oaymwFBCNAFEJQDSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGGUgTyg8MA8=&rs=AOn4CLDV2ikkQc8womrL0DAl7jIh8SDotw"
-            alt="Video thumbnail" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-xl transition-transform hover:scale-105">
-          <div class="absolute inset-0 flex items-center justify-center">
-            <svg class="w-16 h-16 text-red-600 transition-transform hover:scale-110 hover:opacity-90" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </div>
-        </div>
-        <p class="text-gray-900 font-bold p-2 pt-2 pb-6">
-          Mahesh Dahal || Former Ambassador To Australia || 4th Annual General Meeting 2022 ||
-        </p>
-      </div>
-
-
     </div>
+    <p class="text-gray-900 font-bold p-2 pt-2 pb-6">
+      नेपालमा अमेरिकी चासो घट्दो, विश्व राजनीतिमा ट्रम्प हावी : महेश दाहाल, पूर्व राजदूत
+    </p>
   </div>
 
+<!-- Video 2 Thumbnail Trigger -->
+  <div onclick="openModal('DdeoerScEs0')" class="flex flex-col border shadow-lg rounded-xl hover:scale-105 transition-all bg-white cursor-pointer">
+    <div class="relative pt-[56.25%]">
+      <img src="https://img.youtube.com/vi/DdeoerScEs0/hqdefault.jpg" alt="Video 2"
+        class="absolute top-0 left-0 w-full h-full object-cover rounded-t-xl">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <img src="./assets/youtubeLogo.png"
+       alt="YouTube Logo" class="w-28 h-28 object-contain">
+      </div>
+    </div>
+    <p class="text-gray-900 font-bold p-2 pb-6">
+      Mahesh Raj Dahal (Ambassador to Australia) | Good Morning Nepal - 27 February 2021
+    </p>
+  </div>
+
+<!-- Video 3 - Thumbnail Modal Trigger -->
+  <div onclick="openModal('kqk1HGlFB4U')" class="flex flex-col border shadow-lg rounded-xl hover:scale-105 transition-all bg-white cursor-pointer">
+    <div class="relative pt-[56.25%]">
+      <img src="https://img.youtube.com/vi/kqk1HGlFB4U/hqdefault.jpg" alt="Video 3"
+        class="absolute top-0 left-0 w-full h-full object-cover rounded-t-xl">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <img src="./assets/youtubeLogo.png" alt="YouTube Logo" class="w-28 h-28 object-contain">
+      </div>
+    </div>
+    <p class="text-gray-900 font-bold p-2 pb-6">
+      A Talk with Mahesh Raj Dahal, Ambassador of Nepal to Australia
+    </p>
+  </div>
+
+<!-- Video 4 - Thumbnail Modal Trigger -->
+  <div onclick="openModal('XFgQoOrOPnA')" class="flex flex-col border shadow-lg rounded-xl hover:scale-105 transition-all bg-white cursor-pointer">
+    <div class="relative pt-[56.25%]">
+      <img src="https://img.youtube.com/vi/XFgQoOrOPnA/hqdefault.jpg" alt="Video 4"
+        class="absolute top-0 left-0 w-full h-full object-cover rounded-t-xl">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <img src="./assets/youtubeLogo.png" alt="YouTube Logo" class="w-28 h-28 object-contain">
+      </div>
+    </div>
+    <p class="text-gray-900 font-bold p-2 pt-2 pb-6">
+      AAERI NEPAL | 3rd Annual General Meeting | H.E. Mahesh Dahal, Nepalese Ambassador to Australia
+    </p>
+  </div>
+
+<!-- Video 5 - Thumbnail Modal Trigger -->
+  <div onclick="openModal('cmziCdLqJp4')" class="flex flex-col border shadow-lg rounded-xl hover:scale-105 transition-all bg-white cursor-pointer">
+    <div class="relative pt-[56.25%]">
+      <img src="https://img.youtube.com/vi/cmziCdLqJp4/hqdefault.jpg" alt="Video 5"
+        class="absolute top-0 left-0 w-full h-full object-cover rounded-t-xl">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <img src="./assets/youtubeLogo.png" alt="YouTube Logo" class="w-28 h-28 object-contain">
+      </div>
+    </div>
+    <p class="text-gray-900 font-bold p-2 pt-2 pb-6">
+      His Excellency Mr Mahesh Raj Dahal, Ambassador of Nepal to Australia with HB Tamrakar ( COVID-19 )
+    </p>
+  </div>
+
+<!-- Video 6 - Thumbnail Modal Trigger -->
+  <div onclick="openModal('uxMhWBIOqS8')" class="flex flex-col border shadow-lg rounded-xl hover:scale-105 transition-all bg-white cursor-pointer">
+      <div class="relative pt-[56.25%]">
+        <img src="https://img.youtube.com/vi/uxMhWBIOqS8/hqdefault.jpg" alt="Video 6"
+            class="absolute top-0 left-0 w-full h-full object-cover rounded-t-xl">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <img src="./assets/youtubeLogo.png" alt="YouTube Logo" class="w-28 h-28 object-contain">
+        </div>
+      </div>
+      <p class="text-gray-900 font-bold p-2 pt-2 pb-6">
+        Mahesh Dahal || Former Ambassador To Australia || 4th Annual General Meeting 2022 ||
+      </p>
+    </div>
+  </div>
+</div>
 
 <!-- testimonoal section -->
 <section class="bg-gray-50 py-16 px-4">
@@ -493,46 +503,49 @@
 </section>
 
 
-  <section
-    class="w-full mx-auto  py-14 bg-[#3B82F6] bg-opacity-20 pb-20">
-    <div class="flex items-center justify-between mb-4 px-[24px] lg:px-[100px]">
-      <div class="flex gap-2 ">
-        <div class="">
-          <img src="./assets/gallery.png" class="h-[25px] w-[25px] mt-1" alt="">
-        </div>
-        <h2 class="text-[22px] font-bold text-gray-800 mb-4 ">Gallery</h2>
-      </div>
-      <div class="group inline-block">
-        <button onclick="window.location.href='gallery.html'"
-          class="px-4 py-2 bg-[#3B82F6] hover:bg-[#2563EB] text-white  rounded-lg text-medium mt-2 transition-all duration-300 ease-in-out flex items-center gap-2">
-          View all <span class="transform transition-transform duration-300 group-hover:translate-x-1 mb-1">→</span>
-        </button>
-      </div>
+<section class="w-full mx-auto py-16 bg-[#3B82F6] bg-opacity-20">
+  <div class="flex flex-row flex-wrap justify-between items-center mb-10 px-6 lg:px-24">
+    <!-- Title & Icon -->
+    <div class="flex gap-2 items-center">
+      <img src="./assets/gallery.png" class="h-6 w-6 mt-1" alt="">
+      <h2 class="text-[22px] font-bold text-gray-800">Gallery</h2>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mx-20">
-      <!-- Each image wrapped in an anchor with data-fancybox attribute -->
-      <a href="./assets/gallery1.jpg" data-fancybox="gallery">
-        <img src="./assets/gallery1.jpg" alt="Gallery Image 1"
-          class="w-full h-48 object-cover  shadow-md hover:scale-95 transition-transform duration-300" />
-      </a>
-      <a href="./assets/gallery2.jpg" data-fancybox="gallery">
-        <img src="./assets/gallery2.jpg" alt="Gallery Image 2"
-          class="w-full h-48 object-cover  shadow-md hover:scale-95 transition-transform duration-300" />
-      </a>
-      <a href="./assets/gallery3.jpg" data-fancybox="gallery">
-        <img src="./assets/gallery3.jpg" alt="Gallery Image 3"
-          class="w-full h-48 object-cover  shadow-md hover:scale-95 transition-transform duration-300" />
-      </a>
-      <a href="./assets/gallery4.jpg" data-fancybox="gallery">
-        <img src="./assets/gallery4.jpg" alt="Gallery Image 4"
-          class="w-full h-48 object-cover  shadow-md hover:scale-95 transition-transform duration-300" />
-      </a>
-      <a href="./assets/gallery5.jpg" data-fancybox="gallery">
-        <img src="./assets/gallery5.jpg" alt="Gallery Image 4"
-          class="w-full h-48 object-cover  shadow-md hover:scale-95 transition-transform duration-300" />
-      </a>
+
+    <!-- Button: aligned right even on mobile -->
+    <div class="group inline-block self-end md:self-auto">
+      <button onclick="window.location.href='gallery.html'"
+        class="px-4 py-2 bg-[#3B82F6] hover:bg-[#2563EB] text-white rounded-lg text-medium mt-2 transition-all duration-300 ease-in-out flex items-center gap-2">
+        View all <span class="transform transition-transform duration-300 group-hover:translate-x-1 mb-1">→</span>
+      </button>
     </div>
-  </section>
+  </div>
+
+  <!-- Image Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 px-6 lg:px-24">
+    <a href="./assets/gallery1.jpg" data-fancybox="gallery">
+      <img src="./assets/gallery1.jpg" alt="Gallery Image 1"
+        class="w-full h-64 object-cover shadow-md hover:scale-95 transition-transform duration-300" />
+    </a>
+    <a href="./assets/gallery2.jpg" data-fancybox="gallery">
+      <img src="./assets/gallery2.jpg" alt="Gallery Image 2"
+        class="w-full h-64 object-cover shadow-md hover:scale-95 transition-transform duration-300" />
+    </a>
+    <a href="./assets/gallery3.jpg" data-fancybox="gallery">
+      <img src="./assets/gallery3.jpg" alt="Gallery Image 3"
+        class="w-full h-64 object-cover shadow-md hover:scale-95 transition-transform duration-300" />
+    </a>
+    <a href="./assets/gallery4.jpg" data-fancybox="gallery">
+      <img src="./assets/gallery4.jpg" alt="Gallery Image 4"
+        class="w-full h-64 object-cover shadow-md hover:scale-95 transition-transform duration-300" />
+    </a>
+    <a href="./assets/gallery5.jpg" data-fancybox="gallery">
+      <img src="./assets/gallery5.jpg" alt="Gallery Image 5"
+        class="w-full h-64 object-cover shadow-md hover:scale-95 transition-transform duration-300" />
+    </a>
+  </div>
+</section>
+
+
 
   <!-- <div class=" py-16 px-[24px] lg:px-[100px] bg-[#cbd5e1] bg-opacity-40">
     <div class="flex gap-2 mb-4">

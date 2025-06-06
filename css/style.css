@@ -141,7 +141,18 @@ p {
   animation: pulseScale 0.8s ease-in-out infinite;
 }
 
+/* for about me section in landing page  */
+@keyframes fadeUpSignature {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 0.7;
+    transform: translateY(0);
+  }
+}
 
-
-
-
+.fade-up-signature {
+  animation: fadeUpSignature 2s ease-in-out forwards;
+}
