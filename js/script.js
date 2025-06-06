@@ -147,6 +147,6 @@ function openModal(videoId) {
 function closeModal() {
   const modal = document.getElementById("videoModal");
   const iframe = document.getElementById("videoIframe");
-  iframe.src = ""; // Stop video
+  iframe.src = ""; 
   modal.classList.add("hidden");
 }
