@@ -75,7 +75,7 @@ p {
 }
 
 .animate-fade-in {
-  animation: fade-in 1s ease-out forwards;
+  animation: fade-in 2s ease-out forwards;
 }
 
 .animate-slide-up {
@@ -154,5 +154,5 @@ p {
 }
 
 .fade-up-signature {
-  animation: fadeUpSignature 2s ease-in-out forwards;
+  animation: fadeUpSignature 3s ease-in-out forwards;
 }
